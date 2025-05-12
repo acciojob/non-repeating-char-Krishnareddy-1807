@@ -1,5 +1,5 @@
 function firstNonRepeatedChar(str) {
- // Write your code here
+ 
 }
-const input = prompt("Enter a string");
+const input = prompt("krishna reddy");
 alert(firstNonRepeatedChar(input)); 
