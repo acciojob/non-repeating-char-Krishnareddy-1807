@@ -1,13 +1,21 @@
 function firstNonRepeatedChar(str) {
-	let charCount = {}
-	for(let char of str ){
-		charCount[char] = (charCount[char] || 0) + 1
-	}
+    const charCount = {};
 
-	for(let char of str ){
-		if(charCount[char] ===1)
-	}
-	return char
+    // Count the occurrences of each character
+    for (let char of str) {
+        charCount[char] = (charCount[char] || 0) + 1;
+    }
+
+    // Find the first character with count 1
+    for (let char of str) {
+        if (charCount[char] === 1) {
+            return char;
+        }
+    }
+
+    return null; // If no non-repeated character is found
 }
-const input = prompt("krishna reddy");
-alert(firstNonRepeatedChar(input)); 
+
+const input = prompt("Enter a string:");
+alert(firstNonRepeatedChar(input));
+
